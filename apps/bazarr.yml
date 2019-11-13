@@ -46,6 +46,9 @@
           - '/opt/appdata/{{pgrole}}:/config'
           - '{{path.stdout}}:{{path.stdout}}'
           - '/mnt:/mnt'
+          - '/tv:/tv'
+          - '/movies:/movies'
+
 
     - name: 'Setting PG ENV'
       set_fact:
